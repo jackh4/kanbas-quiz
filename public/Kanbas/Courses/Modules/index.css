@@ -49,3 +49,20 @@
 #zxc {
     background-color: blue
 }
+
+.wd-flex-row-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.wd-flex-col-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.wd-flex-grow-1 {
+    flex-grow: 1;
+}
