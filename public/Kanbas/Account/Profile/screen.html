@@ -4,61 +4,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/Kanbas/styles.css" />
+    <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Account/Navigation/index.css" />
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
     <title>Document</title>
 </head>
 
 <body>
-    <table>
-        <tbody>
-            <tr>
-                <td valign="top">
-                    <ul>
-                        <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-                        <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-                        <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-                        <li><a href="/Kanbas/Calendar/index.html">Calendar</a></li>
-                        <li><a href="/Kanbas/Inbox/index.html">Inbox</a></li>
-                        <li><a href="/Kanbas/History/index.html">History</a></li>
-                        <li><a href="/Kanbas/Studio/index.html">Studio</a></li>
-                        <li><a href="/Kanbas/Commons/index.html">Commons</a></li>
-                        <li><a href="/Kanbas/Help/index.html">Help</a></li>
-                    </ul>
-                </td>
-                <td valign="top">
-                    <ul>
-                        <li><a href="/Kanbas/Account/Navigation/index.html">Notification</a></li>
-                        <li><a href="/Kanbas/Account/Profile/screen.html">Profile</a></li>
-                        <li><a href="/Kanbas/Account/Navigation/index.html">Files</a></li>
-                        <li><a href="/Kanbas/Account/Navigation/index.html">Settings</a></li>
-                        <li><a href="/Kanbas/Account/Navigation/index.html">ePortfolios</a></li>
-                        <li><a href="/Kanbas/Account/Navigation/index.html">Shared Content</a></li>
-                        <li><a href="/Kanbas/Account/Navigation/index.html">The Hub</a></li>
-                        <li><a href="/Kanbas/Account/Navigation/index.html">Qwickly Course Tools</a></li>
-                        <li><a href="/Kanbas/Account/Navigation/index.html">Global Annoucements</a></li>
-                    </ul>
-                </td>
-                <td valign="top">
-                    <p>Jose Annunziato's Profile</p>
-                    <hr>
-                    <h1>
-                        Jose Annunziato
+    <div class="d-flex">
+        <div>
+            <ul class="wd-kanbas-navigation">
+                <li>
+                    <a href="http://northeastern.edu">
+                        <img style="display: block" src="/images/northeastern_logo.png" width="100%" height="100%"
+                            style="display: block">
+                    </a>
+                </li>
+                <li class="wd-active">
+                    <a href="/Kanbas/Account/Profile/screen.html">
+                        <i class="fa fa-user-circle-o" style="color: grey"></i>Account</a>
+                </li>
+                <li class="">
+                    <a href="/Kanbas/Dashboard/screen.html">
+                        <i class="fa fa-tachometer"></i><br />Dashboard</a>
+                </li>
+                <li class="">
+                    <a href="/Kanbas/Courses/Home/screen.html">
+                        <i class="fa fa-book"></i><br />Courses</a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <i class="fa fa-calendar"></i><br />Calendar</a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <i class="fa fa-envelope-open-o"></i><br />Inbox</a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <i class="fa fa-clock-o"></i><br />History</a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <i class="fa fa-television"></i><br />Studio</a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <i class="fa fa-arrow-circle-right"></i><br />Commons</a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <i class="fa fa-question-circle-o"></i><br />Help</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul class="wd-navigation">
+                <li><a href="#">Notification</a></li>
+                <li class="wd-active"><a href="/Kanbas/Account/Profile/screen.html">Profile</a></li>
+                <li><a href="#">Files</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">ePortfolios</a></li>
+                <li><a href="#">Shared Content</a></li>
+                <li><a href="#">The Hub</a></li>
+                <li><a href="#">Qwickly Course Tools</a></li>
+                <li><a href="#">Global Annoucements</a></li>
+            </ul>
+        </div>
+        <div>
+            <p>Jose Annunziato's Profile</p>
+            <hr>
+
+            <table>
+                <tr>
+                    <td>
+                        <hi>Jose Annunziato</hi>
+                    </td>
+                    <td>
                         <a href="/Kanbas/Account/Profile/Edit/screen.html">
-                            <button type="button" style="float: right">✎Edit Profile</button>
+                            <button type="button" style="float: end">✎Edit Profile</button>
                         </a>
-                    </h1>
+                    </td>
+                </tr>
+            </table>
 
-                    <h2>Contact</h2>
-                    <p>No registered services, you can add some on the <a href="#">settings</a> pages.</p>
+            <h2>Contact</h2>
+            <p>No registered services, you can add some on the <a href="#">settings</a> pages.</p>
 
-                    <h2>Biography</h2>
-                    <p>Faculty, Software Engineer, AI, Space, and renewables enthusiast.</p>
+            <h2>Biography</h2>
+            <p>Faculty, Software Engineer, AI, Space, and renewables enthusiast.</p>
 
-                    <h2>Links</h2>
-                    <a href="#">Youtube</a>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+            <h2>Links</h2>
+            <a href="#">Youtube</a>
+        </div>
+    </div>
 </body>
 
 </html>
