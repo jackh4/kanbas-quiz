@@ -1,0 +1,64 @@
+
+.wd-modules,
+.wd-modules * {
+    border-radius: 0%;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.wd-modules {
+    margin: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.wd-modules>li {
+    background-color: lightgray;
+    border: 1px solid gray !important;
+    border-left: none !important;
+}
+
+.wd-modules>li>div {
+    padding: 6px;
+    border-left: 1px solid gray !important;
+}
+
+.wd-modules>li>ul>li {
+    padding: 5px;
+    border-top: 1px solid gray !important;
+    border-left: 2px solid green;
+}
+
+.wd-modules>li {
+    margin-bottom: 20px;
+}
+
+.content-buttons {
+    text-align: right;
+    padding: 0;
+    padding-bottom: 15px;
+    padding-right: 20px;
+}
+
+.btn-modules,
+.Button,
+.ui-button {
+    background: #f5f5f5;
+    color: #2d3b45;
+    border: 1px solid;
+    border-color: #c7cdd1;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    padding: 8px 14px;
+    margin-bottom: 0;
+    line-height: 22px;
+    vertical-align: middle;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.red-background {
+    background-color: #D41B2C;
+}

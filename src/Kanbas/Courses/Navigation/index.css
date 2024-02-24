@@ -1,0 +1,36 @@
+.wd-navigation {
+    background-color: white;
+    position: sticky;
+    list-style: none;
+    padding: 0px;
+    padding-right: 20px;
+    width: 150px;
+    margin: 0px;
+    margin-left: 20px;
+}
+
+.wd-navigation li {
+    padding-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.wd-navigation li.wd-active {
+    
+    border-left: 2px solid black;
+}
+
+.wd-navigation li.wd-active a {
+    color: black;
+}
+
+.wd-navigation a {
+    color: #D41B2C;
+    text-decoration: none;
+}
+
+.wd-navigation li a:hover {
+    text-decoration: underline;
+}

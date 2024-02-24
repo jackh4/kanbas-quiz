@@ -1,0 +1,39 @@
+
+.kanbas-navigation {
+    padding: 0;
+    padding-right: 80px;
+}
+
+.wd-kanbas-navigation {
+    background-color: black;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 80px;
+    position: fixed;
+}
+
+.wd-kanbas-navigation li {
+    padding: 10px;
+    margin-bottom: 4px;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.wd-kanbas-navigation li.wd-active {
+    background-color: white;
+}
+
+.wd-kanbas-navigation li.wd-active a {
+    color: #D41B2C;
+}
+
+.wd-kanbas-navigation a {
+    color: white;
+    text-decoration: none;
+}
+
+.wd-kanbas-navigation a i {
+    color: #D41B2C;
+}

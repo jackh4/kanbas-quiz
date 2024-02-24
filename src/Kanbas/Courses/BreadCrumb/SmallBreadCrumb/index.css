@@ -1,0 +1,34 @@
+button {
+    all: unset;
+    padding-right: 10px;
+
+}
+
+.text-link {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.small-breadcrumb {
+    --bs-breadcrumb-divider: ">";
+    margin: 0;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    list-style-type: none !important;
+    text-decoration: none !important;
+}
+
+.small-breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.content-nav-header {
+    display: block;
+    text-align: center;
+    flex-grow: 1;
+}
