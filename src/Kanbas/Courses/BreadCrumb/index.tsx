@@ -32,8 +32,8 @@ function BreadCrumb() {
             isLast: segments.length - 1 === index
         })).splice(2, pathname.length - 2);
 
-    let course = breadcrumbinfo[0].name;
-    let page = breadcrumbinfo[breadcrumbinfo.length - 1].name;
+    // let course = breadcrumbinfo[0].name;
+    // let page = breadcrumbinfo[breadcrumbinfo.length - 1].name;
 
     return (
         <div>

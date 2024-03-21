@@ -9,14 +9,13 @@ import AssignmentEditor from "./Assignments/Editor";
 import BreadCrumb from "./BreadCrumb";
 import SmallBreadCrumb from "./BreadCrumb/SmallBreadCrumb";
 
-function Courses() {
+function Courses({ courses }: { courses: any[]; }) {
     const { courseId } = useParams();
     const course = courses.find((course) => course._id === courseId);
     return (
         <div>
             <BreadCrumb />
             <hr />
-            {/* show main content */}
             <div className="d-flex content-cols-layout">
                 <CourseNavigation />
                 <div className="flex-fill">

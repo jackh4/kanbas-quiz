@@ -23,7 +23,7 @@ function Status() {
         <div className="secondary-status">
             <div className="course-status">
                 {buttons.map((link, index) => (
-                    <a className="btn button-sidebar-wide">
+                    <a className="btn-status button-sidebar-wide">
                         <i>{link.icon}</i> {link.label}
                     </a>
                 ))}

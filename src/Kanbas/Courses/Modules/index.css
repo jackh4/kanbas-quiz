@@ -17,6 +17,7 @@
     background-color: lightgray;
     border: 1px solid gray !important;
     border-left: none !important;
+    margin-bottom: 20px;
 }
 
 .wd-modules>li>div {
@@ -30,10 +31,6 @@
     border-left: 2px solid green;
 }
 
-.wd-modules>li {
-    margin-bottom: 20px;
-}
-
 .content-buttons {
     text-align: right;
     padding: 0;
@@ -42,8 +39,7 @@
 }
 
 .btn-modules,
-.Button,
-.ui-button {
+.Button {
     background: #f5f5f5;
     color: #2d3b45;
     border: 1px solid;
@@ -59,6 +55,17 @@
     overflow: hidden;
 }
 
-.red-background {
+.align-icon-text {
+    display: flex;
+    align-items: center;
+}
+
+.red-button {
+    color: white !important;
     background-color: #D41B2C;
+}
+
+.right-icons-align {
+    display: flex;
+    align-items: center;
 }
