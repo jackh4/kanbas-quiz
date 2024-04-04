@@ -9,9 +9,25 @@ import AssignmentEditor from "./Assignments/Editor";
 import BreadCrumb from "./BreadCrumb";
 import SmallBreadCrumb from "./BreadCrumb/SmallBreadCrumb";
 
-function Courses({ courses }: { courses: any[]; }) {
+import { useState, useEffect } from "react";
+import axios from "axios";
+
+function Courses() {
     const { courseId } = useParams();
-    const course = courses.find((course) => course._id === courseId);
+    const COURSES_API = "https://kanbas-node-server-app-dpdg.onrender.com/api/courses";
+
+    const [course, setCourse] = useState<any>({ _id: "" });
+    const findCourseById = async (courseId?: string) => {
+        const response = await axios.get(
+            `${COURSES_API}/${courseId}`
+        );
+        setCourse(response.data);
+    };
+    useEffect(() => {
+        findCourseById(courseId);
+    }, [courseId]);
+
+    // const course = courses.find((course) => course._id === courseId);
     return (
         <div>
             <BreadCrumb />

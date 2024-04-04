@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./index.css";
 import { FaEllipsisV, FaCheckCircle, FaPlusCircle, FaRegCheckCircle, FaPlus } from "react-icons/fa";
 import { BsThreeDotsVertical } from "react-icons/bs";
@@ -10,11 +10,34 @@ import {
     deleteModule,
     updateModule,
     setModule,
+    setModules,
 } from "./reducer";
+import * as client from "./client";
 import { KanbasState } from "../../store";
 
 function ModuleList() {
     const { courseId } = useParams();
+    useEffect(() => {
+        client.findModulesForCourse(courseId)
+            .then((modules) =>
+                dispatch(setModules(modules))
+            );
+    }, [courseId]);
+
+    const handleAddModule = () => {
+        client.createModule(courseId, module).then((module) => {
+            dispatch(addModule(module));
+        });
+    };
+    const handleDeleteModule = (moduleId: string) => {
+        client.deleteModule(moduleId).then((status) => {
+            dispatch(deleteModule(moduleId));
+        });
+    };
+    const handleUpdateModule = async () => {
+        const status = await client.updateModule(module);
+        dispatch(updateModule(module));
+    };
 
     const moduleList = useSelector((state: KanbasState) =>
         state.modulesReducer.modules);
@@ -72,28 +95,18 @@ function ModuleList() {
                                         } />
                                 </Form.Group>
                             </Form>
-                            {/* <input value={module.name}
-                                onChange={(e) =>
-                                    dispatch(setModule({ ...module, name: e.target.value }))
-                                } />
-
-                            <textarea value={module.description}
-                                onChange={(e) =>
-                                    dispatch(setModule({ ...module, description: e.target.value }))
-                                } /> */}
                         </Modal.Body>
                         <Modal.Footer>
-                            {/* Button styling */}
                             <button
                                 onClick={(event) => {
-                                    dispatch(addModule({ ...module, course: courseId }));
+                                    handleAddModule();
                                     handleClose();
                                 }}>
                                 Add
                             </button>
                             <button
                                 onClick={(event) => {
-                                    dispatch(updateModule(module));
+                                    handleUpdateModule();
                                     handleClose();
                                 }}>
                                 Update
@@ -114,7 +127,7 @@ function ModuleList() {
                                         <FaPlusCircle className="ms-2" />
                                         <Dropdown className="module-dropdown">
                                             <Dropdown.Toggle role="toggle">
-                                                <button ><FaEllipsisV/></button>
+                                                <button ><FaEllipsisV /></button>
                                             </Dropdown.Toggle>
                                             <Dropdown.Menu>
                                                 <Dropdown.Item>
@@ -128,7 +141,7 @@ function ModuleList() {
                                                 </Dropdown.Item>
                                                 <Dropdown.Item>
                                                     <button className="btn-modules"
-                                                        onClick={() => dispatch(deleteModule(module._id))}>
+                                                        onClick={() => handleDeleteModule(module._id)}>
                                                         Delete
                                                     </button>
                                                 </Dropdown.Item>
