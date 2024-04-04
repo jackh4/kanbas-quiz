@@ -4,7 +4,7 @@ import axios from "axios";
 const API_BASE = process.env.REACT_APP_API_BASE;
 
 function WorkingWithArrays() {
-    const API = `${API_BASE}/a5/todos`;
+    const API = `${API_BASE}a5/todos`;
     const [errorMessage, setErrorMessage] = useState(null);
     const [todo, setTodo] = useState({
         id: 1,
