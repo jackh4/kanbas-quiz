@@ -1,17 +1,19 @@
+import Account from "./Account";
 import KanbasNavigation from "./Navigation";
-import Dashboard from "./Dashboard";
+// import Dashboard from "./Dashboard";
 import Courses from "./Courses";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import store from "./store";
 import { Provider } from "react-redux";
 import axios from "axios";
+import Dashboard from "../Courses/Dashboard";
 
 const API_BASE = process.env.REACT_APP_API_BASE;
 
 function Kanbas() {
   const [courses, setCourses] = useState<any[]>([]);
-  const COURSES_API = `${API_BASE}api/courses`;
+  const COURSES_API = `${API_BASE}/api/courses`;
 
   const findAllCourses = async () => {
     const response = await axios.get(COURSES_API);
@@ -61,22 +63,15 @@ function Kanbas() {
       <div className="d-flex">
         <KanbasNavigation />
         <div style={{ flexGrow: 1 }}>
-          <Routes>
+          <Routes>x
+            <Route path="/Account/*" element={<Account />} />
+            {/* <Route path="/Account" element={<h1>Account</h1>} /> */}
             <Route path="/" element={<Navigate to="Dashboard" />} />
-            <Route path="Account" element={<h1>Account</h1>} />
-            <Route path="Dashboard" element={
+            <Route path="/Dashboard" element={
               <Dashboard
-                courses={courses}
-                course={course}
-                show={showCourseModal}
-                setCourse={setCourse}
-                addNewCourse={addNewCourse}
-                deleteCourse={deleteCourse}
-                updateCourse={updateCourse}
-                handleClose={handleClose}
-                handleShow={handleShow} />
+                />
             } />
-            <Route path="Courses/:courseId/*" element={<Courses/>} />
+            <Route path="Courses/:courseId/*" element={<Courses />} />
           </Routes>
         </div>
       </div>
@@ -84,3 +79,13 @@ function Kanbas() {
   );
 }
 export default Kanbas;
+
+// courses={courses}
+// course={course}
+// show={showCourseModal}
+// setCourse={setCourse}
+// addNewCourse={addNewCourse}
+// deleteCourse={deleteCourse}
+// updateCourse={updateCourse}
+// handleClose={handleClose}
+// handleShow={handleShow} 

@@ -1,11 +1,11 @@
 import React from "react";
 import { FaCheckCircle, FaEllipsisV, FaPlusCircle } from "react-icons/fa";
 import { Link, useParams } from "react-router-dom";
-import { assignments } from "../../Database";
+// import { assignments } from "../../Database";
 function Assignments() {
     const { courseId } = useParams();
-    const assignmentList = assignments.filter(
-        (assignment) => assignment.course === courseId);
+    // const assignmentList = assignments.filter(
+    //     (assignment) => assignment.course === courseId);
     return (
         //Add buttons and other fields here
         <>
@@ -18,7 +18,7 @@ function Assignments() {
                             <FaPlusCircle className="ms-2" /><FaEllipsisV className="ms-2" />
                         </span>
                     </div>
-                    <ul className="list-group">
+                    {/* <ul className="list-group">
                         {assignmentList.map((assignment) => (
                             <li className="list-group-item">
                                 <FaEllipsisV className="me-2" />
@@ -27,7 +27,7 @@ function Assignments() {
                                 <span className="float-end">
                                     <FaCheckCircle className="text-success" /><FaEllipsisV className="ms-2" /></span>
                             </li>))}
-                    </ul>
+                    </ul> */}
                 </li>
             </ul>
         </>

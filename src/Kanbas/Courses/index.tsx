@@ -1,4 +1,3 @@
-import { courses } from "../../Kanbas/Database";
 import { Navigate, Route, Routes, useParams } from "react-router-dom";
 import { HiMiniBars3 } from "react-icons/hi2";
 import CourseNavigation from "./Navigation";
@@ -16,7 +15,7 @@ const API_BASE = process.env.REACT_APP_API_BASE;
 
 function Courses() {
     const { courseId } = useParams();
-    const COURSES_API = `${API_BASE}api/courses`;
+    const COURSES_API = `${API_BASE}/api/courses`;
 
     const [course, setCourse] = useState<any>({ _id: "" });
     const findCourseById = async (courseId?: string) => {

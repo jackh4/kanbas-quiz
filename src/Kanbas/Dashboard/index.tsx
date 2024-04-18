@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { FaEllipsisV } from "react-icons/fa";
 import "./index.css";
 import { Modal, Dropdown, Button } from "react-bootstrap";
-// import * as db from "../Database";
 
 function Dashboard({ courses, course, show, setCourse, addNewCourse, deleteCourse, updateCourse, handleClose, handleShow }: {
     courses: any[]; course: any; show: boolean; setCourse: (course: any) => void;
@@ -67,7 +66,7 @@ function Dashboard({ courses, course, show, setCourse, addNewCourse, deleteCours
                                 {/* Edit and Delete Course (Move to separate file later on) */}
                                 <Dropdown className="course-dropdown">
                                     <Dropdown.Toggle role="toggle">
-                                        <FaEllipsisV className="fs-6"/>
+                                        <FaEllipsisV className="fs-6" />
                                     </Dropdown.Toggle>
                                     <Dropdown.Menu>
                                         <Dropdown.Item>

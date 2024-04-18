@@ -1,0 +1,78 @@
+.dashboard-header {
+    padding: 0;
+    margin: 10px 0px 0px 40px;
+    align-items: center;
+    width: 100%;
+}
+
+.dashboard-course-header {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.course-button {
+    text-decoration: none !important;
+    background: #f5f5f5;
+    color: #2d3b45;
+    border: 1px solid;
+    border-color: #c7cdd1;
+    border-radius: 3px; 
+    padding: 8px 14px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.card-navigation {
+    padding: 0;
+    width: 260px;
+    margin: 20px 0px 0px 40px;
+    border-radius: 7px;
+    position: relative;
+}
+
+.card-navigation:hover {
+    box-shadow: 0 5px 10px rgba(0,0,0,.3);
+}
+
+.card {
+    position: relative;
+    text-overflow: hidden;
+    overflow: hidden;
+}
+
+.card-header-image {
+    box-sizing: border-box;
+    height: 146px;
+    border: 1px solid rgba(0,0,0,.1); 
+}
+
+.course-dropdown {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+}
+
+.dropdown-toggle {
+    all: unset;
+    text-decoration: none !important;
+    background-color: transparent;
+    border: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-toggle btn-primary {
+    
+}
+
+.dropdown-toggle:hover {
+    fill: none;
+}
+
+.dropdown-toggle::after {
+    text-decoration: none !important;
+    display: none;
+}

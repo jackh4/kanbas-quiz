@@ -1,5 +1,5 @@
 import { Link, useParams } from "react-router-dom";
-import { assignments } from "../../../Database";
+// import { assignments } from "../../../Database";
 import "./index.css";
 import { FaFileImport, FaChartBar, FaBell, FaRegCalendarAlt } from "react-icons/fa";
 import { FaArrowRightFromBracket } from "react-icons/fa6";
@@ -17,8 +17,8 @@ function Status() {
         { label: "View Course Notifications", icon: <FaBell className="fs-5" /> }
     ];
     const { courseId } = useParams();
-    const assignmentList = assignments.filter(
-        (assignment) => assignment.course === courseId);
+    // const assignmentList = assignments.filter(
+    //     (assignment) => assignment.course === courseId);
     return (
         <div className="secondary-status">
             <div className="course-status">
@@ -31,13 +31,13 @@ function Status() {
             <div className="course-to-do-status">
                 <span>To Do</span>
                 <hr />
-                <ul className="course-to-do-status-links">
+                {/* <ul className="course-to-do-status-links">
                     {assignmentList.map((assignment) => (
                         <li className="list-group-item">
                             <FaRegCalendarAlt/>
                             <Link to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}>{assignment.title}</Link>
                         </li>))}
-                </ul>
+                </ul> */}
             </div>
         </div>
     )
