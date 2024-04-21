@@ -1,12 +1,16 @@
 .dashboard-header {
     padding: 0;
+    border: 0;
     margin: 10px 0px 0px 40px;
     align-items: center;
-    width: 100%;
+    width: 95%;
 }
 
 .dashboard-course-header {
+    padding: 0;
+    margin: 0;
     width: 100%;
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -18,7 +22,7 @@
     color: #2d3b45;
     border: 1px solid;
     border-color: #c7cdd1;
-    border-radius: 3px; 
+    border-radius: 3px;
     padding: 8px 14px;
     text-align: center;
     vertical-align: middle;
@@ -33,19 +37,38 @@
 }
 
 .card-navigation:hover {
-    box-shadow: 0 5px 10px rgba(0,0,0,.3);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
 }
 
 .card {
     position: relative;
     text-overflow: hidden;
+}
+
+.card-title {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 230px;
+    text-decoration: none;
+    color: navy;
+    font-weight: bold;
     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card-text {
+    width: 230px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .card-header-image {
     box-sizing: border-box;
     height: 146px;
-    border: 1px solid rgba(0,0,0,.1); 
+    border: 1px solid rgba(0, 0, 0, .1);
 }
 
 .course-dropdown {
@@ -64,9 +87,7 @@
     padding: 0;
 }
 
-.dropdown-toggle btn-primary {
-    
-}
+.dropdown-toggle btn-primary {}
 
 .dropdown-toggle:hover {
     fill: none;
