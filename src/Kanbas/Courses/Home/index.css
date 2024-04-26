@@ -1,0 +1,21 @@
+.flex-main-container {
+    display: flex;
+    padding: 36px 48px 48px 48px;
+}
+
+.wd-flex-row-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: 100%;
+}
+
+.wd-flex-col-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+
+.wd-flex-grow-1 {
+    flex-grow: 1;
+}

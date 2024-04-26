@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/Kanbas/styles.css" />
+    <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+    <title>Edit Assignments</title>
+</head>
+
+<body>
+    <div class="d-flex">
+        <div>
+            <ul class="wd-kanbas-navigation">
+                <li>
+                    <a href="http://northeastern.edu">
+                        <img style="display: block" src="/images/northeastern_logo.png" width="100%" height="100%"
+                            style="display: block">
+                    </a>
+                </li>
+                <li class="">
+                    <a href="/Kanbas/Account/Profile/screen.html">
+                        <i class="fa fa-user-circle-o" style="color: grey"></i>Account</a>
+                </li>
+                <li class="">
+                    <a href="/Kanbas/Dashboard/screen.html">
+                        <i class="fa fa-tachometer"></i><br />Dashboard</a>
+                </li>
+                <li class="wd-active">
+                    <a href="/Kanbas/Courses/Home/screen.html">
+                        <i class="fa fa-book"></i><br />Courses</a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <i class="fa fa-calendar"></i><br />Calendar</a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <i class="fa fa-envelope-open-o"></i><br />Inbox</a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <i class="fa fa-clock-o"></i><br />History</a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <i class="fa fa-television"></i><br />Studio</a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <i class="fa fa-arrow-circle-right"></i><br />Commons</a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <i class="fa fa-question-circle-o"></i><br />Help</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul class="wd-navigation">
+                <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+                <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
+                <li><a href="http://piazza.com">Piazza</a></li>
+                <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                <li class="wd-active"><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
+                <li><a href="#">Zoom Meetings</a></li>
+                <li><a href="#">Quizzes</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Panopto Video</a></li>
+                <li><a href="#">Discussions</a></li>
+                <li><a href="#">Annoucements</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Files</a></li>
+                <li><a href="#">Rubrics</a></li>
+                <li><a href="#">Outcomes</a></li>
+                <li><a href="#">Collaborations</a></li>
+                <li><a href="#">Syllabus</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </div>
+        <div>
+            <select>
+                <option>SpeedGrader</option>
+            </select>
+            <hr>
+
+            <h3>Assignment Name</h3>
+            <form>
+                <input value="A1 - ENV + HTML"><br /><br />
+                <textarea>This is the assignment description</textarea><br /><br />
+
+                <label for="points">Points</label><br />
+                <input id="points" value="100"><br /><br />
+
+                <label for="assignment">Assignment Group</label><br />
+                <select id="assignment">
+                    <option>ASSIGNMENTS</option>
+                </select><br /><br />
+
+                <label for="grade">Display Grade as</label><br />
+                <select id="grade">
+                    <option>Percentage</option>
+                </select><br /><br />
+
+                <label for="submission">Submission Type</label><br />
+                <select id="submission">
+                    <option>Online</option>
+                </select><br /><br />
+
+                <label>Online Entry Options</label><br />
+                <input type="checkbox" value="TEXT" name="check-entry" id="check-txt" />
+                <label for="">Text Entry</label><br />
+                <input type="checkbox" value="URL" name="check-entry" id="check-url" />
+                <label for="">Website URL</label><br />
+                <input type="checkbox" value="MEDIA" name="check-entry" id="check-media" />
+                <label for="">Media Recordings</label><br />
+                <input type="checkbox" value="ANNOTATION" name="check-entry" id="check-annotation" />
+                <label for="">Student Annotation</label><br />
+                <input type="checkbox" value="FILE" name="check-entry" id="check-file" />
+                <label for="">File Uploads</label><br /><br />
+
+                <label for="assign-to">Assign<br />Assign To</label><br />
+                <input id="assign-to" value="Everyone"><br /><br />
+
+                <label for="due-date">Due</label><br />
+                <input type="date" id="due-date" value="2021-01-01"><br /><br />
+
+                <label for="start-date">Available from</label><br />
+                <input type="date" id="start-date" value="2021-01-01"><br /><br />
+
+                <label for="end-date">Until</label><br />
+                <input type="date" id="end-date" value="2021-01-01"><br /><br />
+
+                <button type="button">Cancel</button>
+                <button type="button">Save</button>
+            </form><br />
+        </div>
+    </div>
+</body>
+
+</html>

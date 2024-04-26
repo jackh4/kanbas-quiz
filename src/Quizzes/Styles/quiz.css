@@ -1,0 +1,56 @@
+.quiz-header {
+    display: flex;
+    align-items: center;
+}
+
+.quiz-detail {
+    padding: 0px 0px 0px 0px;
+}
+
+.quiz-detail-label {
+    display: inline-block;
+    width: 150px;
+    padding: 5px;
+}
+
+.quiz-times-table, thead {
+    width: 90%;
+    border-bottom: 1px solid black;
+}
+
+
+.quiz-buttons {
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.btn-quizzes,
+.Button {
+    background: #f5f5f5;
+    color: #2d3b45;
+    border: 1px solid;
+    border-color: #c7cdd1;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    padding: 8px 14px;
+    margin-bottom: 0;
+    line-height: 22px;
+    vertical-align: middle;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.align-icon-text {
+    display: flex;
+    align-items: center;
+}
+
+.quiz-edit-options {
+
+}
+
+.quiz-edit-times {
+
+}

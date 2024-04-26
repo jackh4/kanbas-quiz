@@ -1,0 +1,47 @@
+.secondary-status {
+    display: block;
+    width: 260px;
+}
+
+.course-status {
+    padding: 0;
+    padding-bottom: 18px;
+}
+
+.course-to-do-status {
+    display: block;
+    overflow: visible;
+}
+
+.course-to-do-status-links {
+    text-decoration: none !important;
+}
+
+.course-to-do-status-links li {
+    text-decoration: none !important;
+}
+
+.btn-status,
+.Button,
+.ui-button {
+    background: #f5f5f5;
+    color: #2d3b45;
+    border: 1px solid;
+    border-color: #c7cdd1;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    padding: 8px 14px;
+    margin-bottom: 0;
+    line-height: 22px;
+    vertical-align: middle;
+    text-decoration: none;
+    overflow: hidden;
+    width: 100%;
+}
+
+.button-sidebar-wide {
+    text-align: left;
+    margin: 5px auto;
+    display: block;
+}

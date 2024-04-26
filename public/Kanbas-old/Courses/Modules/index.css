@@ -1,0 +1,68 @@
+/* Note: Change to more generic name for other uses */
+.wd-modules,
+.wd-modules * {
+    border-radius: 0%;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.wd-modules {
+    margin: 5px;
+}
+
+.wd-modules>li {
+    background-color: lightgray;
+    border: 1px solid gray !important;
+    border-left: none !important;
+}
+
+.wd-modules>li>div {
+    padding: 6px;
+    border-left: 1px solid gray !important;
+}
+
+.wd-modules>li>ul>li {
+    padding: 5px;
+    border-top: 1px solid gray !important;
+    border-left: 2px solid green;
+}
+
+.wd-modules>li {
+    margin-bottom: 20px;
+}
+
+.asd {
+    background-color: red;
+    color: white
+}
+
+#asd {
+    background-color: red
+}
+
+.zxc {
+    background-color: blue;
+    color: white
+}
+
+#zxc {
+    background-color: blue
+}
+
+.wd-flex-row-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.wd-flex-col-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.wd-flex-grow-1 {
+    flex-grow: 1;
+}
