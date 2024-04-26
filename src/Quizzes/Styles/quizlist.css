@@ -1,0 +1,103 @@
+.quizzes-header {
+    display: flex;
+    /* float: right; */
+}
+
+/* .ig-quiz-header {
+    
+} */
+
+.li-quiz {
+    border-radius: 0%;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    margin: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.ig-row {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.ig-info {
+    overflow-wrap: break-word;
+    flex: 1;
+    min-width: 1px;
+    margin: 0 12px;
+}
+
+.ig-details {
+    font-size: 0.75rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ig-details-item {
+    white-space: nowrap;
+    padding: 0px 12px 0px 0px;
+}
+
+.ig-type-icon {
+    width: 1.875rem;
+    height: 1.875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.green-bar {
+    background-color: green;
+    height: 100%;
+    max-width: 3%;
+    float: left;
+    border-radius: 0%;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+/* .wd-quizzes>li {
+    background-color: lightgray;
+    border: 1px solid gray !important;
+    border-left: none !important;
+    margin-bottom: 20px;
+}
+
+.wd-quizzes>li>div {
+    padding: 6px;
+    border-left: 1px solid gray !important;
+}
+
+.wd-quizzes>li>ul>li {
+    padding: 5px;
+    border-top: 1px solid gray !important;
+    border-left: 2px solid green;
+} */
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.dropdown-toggle.btn-primary {
+    background-color: transparent;
+    color: #212529;
+    border-color: #ced4da;
+}
+
+.dropdown-toggle.btn-primary:hover {
+    background-color: transparent;
+    color: #212529;
+    border-color: #6c757d;
+}
+
+a {
+    color: black;
+    text-decoration: none !important;
+}

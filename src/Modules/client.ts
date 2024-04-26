@@ -8,12 +8,12 @@ export interface Module {
   name: string,
   description: string,
   course: string,
-  lessons: [{
+  lessons: {
     _id: string,
     name: string,
     description: string,
     module: string,
-  }]
+  }[]
 };
 export const findAllModules = async () => {
   const response = await axios.get(`${COURSES_API}`);

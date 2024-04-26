@@ -67,10 +67,7 @@ function Kanbas() {
             <Route path="/Account/*" element={<Account />} />
             {/* <Route path="/Account" element={<h1>Account</h1>} /> */}
             <Route path="/" element={<Navigate to="Dashboard" />} />
-            <Route path="/Dashboard" element={
-              <Dashboard
-                />
-            } />
+            <Route path="/Dashboard" element={<Dashboard />} />
             <Route path="Courses/:courseId/*" element={<Courses />} />
           </Routes>
         </div>
@@ -79,13 +76,3 @@ function Kanbas() {
   );
 }
 export default Kanbas;
-
-// courses={courses}
-// course={course}
-// show={showCourseModal}
-// setCourse={setCourse}
-// addNewCourse={addNewCourse}
-// deleteCourse={deleteCourse}
-// updateCourse={updateCourse}
-// handleClose={handleClose}
-// handleShow={handleShow} 

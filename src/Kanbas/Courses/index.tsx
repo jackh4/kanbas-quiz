@@ -3,6 +3,10 @@ import { HiMiniBars3 } from "react-icons/hi2";
 import CourseNavigation from "./Navigation";
 import Modules from "./Modules";
 import Home from "./Home";
+import QuizList from "../../Quizzes/DisplayQuiz/QuizList";
+import QuizDetails from "../../Quizzes/DisplayQuiz/Quiz";
+import QuizEdit from "../../Quizzes/QuizEdit/QuizEdit";
+import PreviewQuiz from "../../Quizzes/DisplayQuiz/PreviewQuiz";
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/Editor";
 import BreadCrumb from "./BreadCrumb";
@@ -44,6 +48,10 @@ function Courses() {
                         <Route path="Assignments" element={<Assignments />} />
                         <Route path="Assignments/:assignmentId" element={<AssignmentEditor />} />
                         <Route path="Grades" element={<h1>Grades</h1>} />
+                        <Route path="Quizzes" element={<QuizList />} />
+                        <Route path="Quizzes/:quizTitle" element={<QuizDetails />} />
+                        <Route path="Quizzes/:quizTitle/QuizEdit" element={<QuizEdit />} />
+                        <Route path="Quizzes/:quizTitle/PreviewQuiz" element={<PreviewQuiz />} />
                     </Routes>
                 </div>
 
